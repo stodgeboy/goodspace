@@ -149,26 +149,26 @@
 					echo "</div>";
 					echo "</div>"; // single-context
 					
-					// About Author
-					if(get_post_meta($post->ID, 'post-option-author-info-enabled', true) == "Yes"){
-						echo "<div class='about-author-wrapper'>";
-						echo "<div class='about-author-avartar'>" . get_avatar( get_the_author_meta('ID'), 90 ) . "</div>";
-						echo "<div class='about-author-info'>";
-						echo "<div class='about-author-title gdl-link-title gdl-title'>" . $translator_about_author . "</div>";
-						echo get_the_author_meta('description');
-						echo "</div>";
-						echo "<div class='clear'></div>";
-						echo "</div>";
-					}
+					// About Author - Commented out to remove from blog post comments
+					// if(get_post_meta($post->ID, 'post-option-author-info-enabled', true) == "Yes"){
+// 						echo "<div class='about-author-wrapper'>";
+// 						echo "<div class='about-author-avartar'>" . get_avatar( get_the_author_meta('ID'), 90 ) . "</div>";
+// 						echo "<div class='about-author-info'>";
+// 						echo "<div class='about-author-title gdl-link-title gdl-title'>" . $translator_about_author . "</div>";
+// 						echo get_the_author_meta('description');
+// 						echo "</div>";
+// 						echo "<div class='clear'></div>";
+// 						echo "</div>";
+// 					}
 					
-					// Include Social Shares
-					if(get_post_meta($post->ID, 'post-option-social-enabled', true) == "Yes"){
-						echo "<div class='social-share-title gdl-link-title gdl-title'>";
-						echo $translator_social_share;
-						echo "</div>";
-						include_social_shares();
-						echo "<div class='clear'></div>";
-					}
+					// Include Social Shares - Commented out to remove from blog post comments
+					// if(get_post_meta($post->ID, 'post-option-social-enabled', true) == "Yes"){
+// 						echo "<div class='social-share-title gdl-link-title gdl-title'>";
+// 						echo $translator_social_share;
+// 						echo "</div>";
+// 						include_social_shares();
+// 						echo "<div class='clear'></div>";
+// 					}
 				
 					echo '<div class="comment-wrapper">';
 					comments_template(); 
