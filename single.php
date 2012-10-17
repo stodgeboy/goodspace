@@ -1,4 +1,17 @@
-<?php get_header(); ?>
+<?php 
+/**
+ * single.php
+ * 
+ * Modified version of the V1.03 Good Space WordPress Theme
+ * Modified by Ian Renshaw for www.ianandsam.net
+ *
+ * Change History
+ * ---------------
+ * 
+ * 2012-10-17 - Comment out - 'About Author' and 'Include Social Shares'
+ *
+ */
+get_header(); ?>
 	<?php
 		// Check and get Sidebar Class
 		$sidebar = get_post_meta($post->ID,'post-option-sidebar-template',true);
